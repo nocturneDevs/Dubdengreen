@@ -171,7 +171,7 @@ body div#page div#title-wrapper {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('../resources/backgrounds/blackTexture.png');
+  background-image: url('../resources/backgrounds/treeBrown.png');
   background-repeat: repeat;
   padding: 8rem 2rem 2rem 2rem;
   margin: 0;
@@ -208,7 +208,7 @@ body div#page nav#main-nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('../resources/backgrounds/blackTexture.png');
+  background-image: url('../resources/backgrounds/greenTexture.png');
   background-repeat: repeat;
   padding: 2rem 2rem 2rem 2rem;
   margin: 0;
@@ -287,6 +287,10 @@ body div#page .homepage-section p {
   font-size: 2.4rem;
   line-height: 3.6rem;
   text-align: justify;
+  padding: 1rem 0;
+}
+body div#page .homepage-section p em {
+  font-weight: 900;
 }
 body div#page .homepage-section p#main-description-graphic {
   display: inline;
