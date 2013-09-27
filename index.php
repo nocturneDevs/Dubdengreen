@@ -38,12 +38,11 @@
 	</div>
 
 	<div id="clients" class="homepage-section">
-		<h4>Our Clients</h4>
+		<h4>We Eat Organic. Do You?</h4>
 		<div id="clientLogos">
-			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/DB.jpg">
-			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/SCB.jpg">
-			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/Total.jpg">
-			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/SKS.jpg">
+			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/madagascarPenguins.jpg" height="250px">
+			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/madagascarAlex.jpg" height="250px">
+			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/clientLogos/madagascarHippo.jpg" height="250px">
 		</div>
 	</div>
 	
