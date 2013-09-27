@@ -1,7 +1,7 @@
 		
 
 		<div id="footer">
-			Developed by sanjaypojo
+			Developed by nocturne
 		</div>
 	</div>
 </body>

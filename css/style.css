@@ -165,7 +165,7 @@ body div#page a {
   -webkit-transition: color 0.25s ease-out;
 }
 body div#page a:hover {
-  color: #339a80;
+  color: #ddaa11;
 }
 body div#page div#title-wrapper {
   display: block;
@@ -242,7 +242,7 @@ body div#page nav#main-nav a {
   -webkit-transition: color 0.25s ease-out;
 }
 body div#page nav#main-nav a:hover {
-  color: #339a80;
+  color: #ddaa11;
 }
 body div#page .homepage-section {
   background-color: rgba(248, 247, 232, 0.5);
