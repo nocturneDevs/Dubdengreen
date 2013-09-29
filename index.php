@@ -15,7 +15,7 @@
 
 	<div id="main-description" class="homepage-section">
 		<p id="main-description-graphic">
-			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/theTree.png">
+			<img src="<?php echo get_template_directory_uri(); ?>/resources/images/theTree.png" width="300px">
 		</p>
 
 		<p id="main-description-text">
