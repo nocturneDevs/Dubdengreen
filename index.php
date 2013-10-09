@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
-	<div id="title-wrapper">
+	<!-- <div id="title-wrapper">
 		<h1><a href="<?php echo home_url(); ?>">Dubdengreen</a></h1>
 		<h3>Organic Bounty. And other things Good.</h3>
-	</div>
-
+	</div> -->
+<!-- 
 	<nav id="main-nav">
 		<a href="<?php echo home_url(); ?>">Home</a>
 		<a href="<?php echo home_url(); ?>">About Us</a>
 		<a href="<?php echo home_url(); ?>">Shop Now</a>
 		<a href="<?php echo home_url(); ?>">News</a>
 		<a href="<?php echo home_url(); ?>">Contact Us</a>
-	</nav>
+	</nav> -->
 
 	<div id="main-description" class="homepage-section">
 		<p id="main-description-graphic">

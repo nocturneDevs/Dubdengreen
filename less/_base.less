@@ -9,8 +9,9 @@ html {
 }
 
 body {
-	background-image: url('../resources/backgrounds/creamTexture.png');
-	background-repeat: repeat;
+	// background-image: url('../resources/backgrounds/creamTexture.png');
+	// background-repeat: repeat;
+	background-color: rgb(247,246,233);
 	margin: 0;
 	color:@textColor1;
 
@@ -37,7 +38,7 @@ body {
 			.center();
 			background-image: url('../resources/backgrounds/treeBrown.png');
 			background-repeat: repeat;
-			padding: @divMargin 2rem 2rem 2rem;
+			padding: 2rem 2rem 2rem 2rem;
 			margin: 0;
 
 			background-color: #333;
@@ -45,25 +46,26 @@ body {
 			
 			h1 {
 				font-family:"Oxygen","Helvetica",sans-serif;
-				font-size:8rem;
-				text-align:center;
+				font-size:6rem;
+				text-align:left;
 			}
 		
-			h3 {
-				font-size:3.2rem;
-				text-align:center;
+			h2 {
+				font-size:2rem;
+				text-align:left;
 				letter-spacing:3px;
 			}
 
 		}
 
 		nav#main-nav{
-			.clearfix();
-			.center();
+			// .clearfix();
+			// .center();
 			background-image: url('../resources/backgrounds/greenTexture.png');
 			background-repeat: repeat;
 			padding: 2rem 2rem 2rem 2rem;
 			margin: 0;
+			width:100%;
 
 			background-color: #333;
 			color: #ccc;
@@ -183,4 +185,75 @@ body {
 			font-size:1.3rem;
 		}
 	}
+}
+
+
+.main-navigation {
+	clear: both;
+	margin: 0 auto;
+	min-height: 45px;
+	position: relative;
+}
+
+ul.nav-menu,
+div.nav-menu > ul {
+	margin: 0;
+	padding: 0 40px 0 0;
+}
+
+.nav-menu li {
+	display: inline-block;
+	position: relative;
+}
+
+.nav-menu li a {
+	color: #141412;
+	display: block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+	background-color: #220e10;
+	border: 2px solid #f7f5e7;
+	border-top: 0;
+	display: none;
+	padding: 0;
+	position: absolute;
+	left: -2px;
+	z-index: 99999;
+}
+
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
+
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+	color: #fff;
+	margin: 0;
+	width: 200px;
+}
+
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul {
+	display: block;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	color: #bc360a;
+	font-style: italic;
+}
+
+.menu-toggle {
+	display: none;
 }
