@@ -30,8 +30,9 @@
 <!-- FONTS --><!-- TODO: Is this the best way to do this? --> 
 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Mako:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
 <script src="http://use.edgefonts.net/aguafina-script:n4.js"></script>
 
 <title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -46,18 +47,23 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<div id="title-wrapper">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</a>
+		<div id="header-wrapper">
+			<div id="title-wrapper">
+				<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</a>
+			</div>
+
+			<div id="navbar" class="navbar">
+				<nav id="main-nav" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+					<!-- <?php get_search_form(); ?> -->
+				</nav><!-- #main-nav -->
+			</div><!-- #navbar -->
+
 		</div><!-- #title-wrapper -->
 
-		<div id="navbar" class="navbar">
-			<nav id="main-nav" class="navigation main-navigation" role="navigation">
-				<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-				<!-- <?php get_search_form(); ?> -->
-			</nav><!-- #main-nav -->
-		</div><!-- #navbar -->
+			
 	

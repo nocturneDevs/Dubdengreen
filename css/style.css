@@ -139,7 +139,7 @@ body div#page {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Mako", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 body div#page:before,
 body div#page:after {
@@ -164,56 +164,75 @@ body div#page a {
   -webkit-transition: color 0.25s ease-out;
 }
 body div#page a:hover {
-  color: #ddaa11;
+  color: #e39d65;
 }
-body div#page div#title-wrapper {
+body div#page div#header-wrapper {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('../resources/backgrounds/treeBrown.png');
+  background-image: url('../resources/backgrounds/greenTexture2.png');
   background-repeat: repeat;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 3rem 0 0 0;
   margin: 0;
   background-color: #333;
-  color: #fff;
+  color: #ffffdd;
 }
-body div#page div#title-wrapper:before,
-body div#page div#title-wrapper:after {
+body div#page div#header-wrapper:before,
+body div#page div#header-wrapper:after {
   content: " ";
   display: table;
 }
-body div#page div#title-wrapper:after {
+body div#page div#header-wrapper:after {
   clear: both;
 }
-body div#page div#title-wrapper:before,
-body div#page div#title-wrapper:after {
+body div#page div#header-wrapper:before,
+body div#page div#header-wrapper:after {
   content: " ";
   display: table;
 }
-body div#page div#title-wrapper:after {
+body div#page div#header-wrapper:after {
   clear: both;
 }
-body div#page div#title-wrapper h1 {
-  font-family: "Oxygen", "Helvetica", sans-serif;
+body div#page div#header-wrapper div#title-wrapper {
+  margin: 0 2rem 2rem 2rem;
+}
+body div#page div#header-wrapper div#title-wrapper h1 {
+  font-family: "Allerta", "Helvetica", sans-serif;
   font-size: 6rem;
-  text-align: left;
+  text-align: center;
 }
-body div#page div#title-wrapper h2 {
-  font-size: 2rem;
-  text-align: left;
+body div#page div#header-wrapper div#title-wrapper h2 {
+  font-size: 1.6rem;
+  text-align: center;
   letter-spacing: 3px;
 }
 body div#page nav#main-nav {
-  background-image: url('../resources/backgrounds/greenTexture.png');
-  background-repeat: repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem 2rem 2rem 2rem;
   margin: 0;
   width: 100%;
-  background-color: #333;
-  color: #ccc;
+  color: #eeaa33;
   font-family: "Oxygen", "Helvetica", sans-serif;
   font-size: 1.5rem;
   text-align: center;
+}
+body div#page nav#main-nav:before,
+body div#page nav#main-nav:after {
+  content: " ";
+  display: table;
+}
+body div#page nav#main-nav:after {
+  clear: both;
+}
+body div#page nav#main-nav:before,
+body div#page nav#main-nav:after {
+  content: " ";
+  display: table;
+}
+body div#page nav#main-nav:after {
+  clear: both;
 }
 body div#page nav#main-nav a {
   padding: 0 2rem;
@@ -223,7 +242,7 @@ body div#page nav#main-nav a {
   -webkit-transition: color 0.25s ease-out;
 }
 body div#page nav#main-nav a:hover {
-  color: #ddaa11;
+  color: #e39d65;
 }
 body div#page .homepage-section {
   background-color: rgba(248, 247, 232, 0.5);
@@ -256,6 +275,22 @@ body div#page .homepage-section:after {
 body div#page .homepage-section:after {
   clear: both;
 }
+body div#page .homepage-section:before,
+body div#page .homepage-section:after {
+  content: " ";
+  display: table;
+}
+body div#page .homepage-section:after {
+  clear: both;
+}
+body div#page .homepage-section:before,
+body div#page .homepage-section:after {
+  content: " ";
+  display: table;
+}
+body div#page .homepage-section:after {
+  clear: both;
+}
 body div#page .homepage-section h4 {
   font-size: 2.4rem;
   line-height: 3.6rem;
@@ -265,8 +300,8 @@ body div#page .homepage-section h4 {
   font-weight: 700;
 }
 body div#page .homepage-section p {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   text-align: justify;
   padding: 1rem 0;
 }
@@ -330,16 +365,19 @@ body div#page #clientLogos img {
 body div#page div#footer {
   display: inline;
   float: left;
-  width: 97.91666666666666%;
-  margin: 0 1.0416666666666665%;
+  width: 100%;
+  margin: 0 0;
   background-image: url('../resources/backgrounds/blackTexture.png');
   background-repeat: repeat;
-  padding-top: 2.4rem;
   margin-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  margin-bottom: 0;
+  padding: 2.4rem 0;
   border-top: 1px solid #dddddd;
   text-align: center;
   font-size: 1.3rem;
+}
+body div#page div#footer a#nocturne-link:hover {
+  color: #339a80;
 }
 .main-navigation {
   clear: both;
@@ -405,25 +443,7 @@ ul.nav-menu li:hover > ul,
   html {
     font-size: 62.5%;
   }
-  body div#page div#nocturneWrapper {
-    margin-top: 18rem;
-    margin-bottom: 18rem;
-  }
-  body div#page div.bioColumn {
-    display: inline;
-    float: left;
-    width: 39.58333333333333%;
-    margin: 0 1.0416666666666665%;
-    margin-top: 8rem;
-  }
-  body div#page div.bioColumn p {
+  body div#page .homepage-section p {
     font-size: 1.4rem;
-    line-height: 2.4rem;
-  }
-  body div#page div.bioColumn div.imgWrapper {
-    float: left;
-  }
-  body div#page div#bioColumnRight {
-    margin-left: 17.708333333333332%;
   }
 }

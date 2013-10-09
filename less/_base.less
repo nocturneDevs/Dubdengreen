@@ -20,7 +20,7 @@ body {
 		.clearfix();
 		.center();
 	
-		font-family:"Mako",sans-serif;
+		font-family:"Open Sans",sans-serif;
 
 		a {
 			text-decoration:none;
@@ -33,42 +33,51 @@ body {
 			}
 		}
 
-		div#title-wrapper {
+		//#20730B
+		//#FFA15E
+
+		div#header-wrapper {
 			.clearfix();
 			.center();
-			background-image: url('../resources/backgrounds/treeBrown.png');
+			background-image: url('../resources/backgrounds/greenTexture2.png');
 			background-repeat: repeat;
-			padding: 2rem 2rem 2rem 2rem;
+			padding: 3rem 0 0 0;
 			margin: 0;
 
 			background-color: #333;
-			color: #fff;
+			color: @textColor2;
 			
-			h1 {
-				font-family:"Oxygen","Helvetica",sans-serif;
-				font-size:6rem;
-				text-align:left;
+			div#title-wrapper {
+				margin:0 2rem 2rem 2rem;
+
+				//color: rgb(66,95,71);
+				h1 {
+					font-family:"Allerta","Helvetica",sans-serif;
+					font-size:6rem;
+					text-align:center;
+				}
+			
+				h2 {
+					font-size:1.6rem;
+					text-align:center;
+					letter-spacing:3px;
+				}
 			}
-		
-			h2 {
-				font-size:2rem;
-				text-align:left;
-				letter-spacing:3px;
-			}
+				
 
 		}
 
 		nav#main-nav{
-			// .clearfix();
-			// .center();
-			background-image: url('../resources/backgrounds/greenTexture.png');
-			background-repeat: repeat;
+			.clearfix();
+			.center();
+			//background-image: url('../resources/backgrounds/greenTexture.png');
+			//background-repeat: repeat;
 			padding: 2rem 2rem 2rem 2rem;
 			margin: 0;
 			width:100%;
 
-			background-color: #333;
-			color: #ccc;
+			//background-color: #333;
+			color: #eeaa33;
 			font-family:"Oxygen","Helvetica",sans-serif;
 			font-size:1.5rem;
 			text-align:center;
@@ -88,6 +97,7 @@ body {
 		}
 
 		.homepage-section {
+			.clearfix;
 			background-color: fade(#f8f7e8,50%);
 			//.opacity(0.6);
 			color: #070702;
@@ -109,8 +119,8 @@ body {
 			}
 
 			p {
-				font-size:2.4rem;
-				line-height:3.6rem;
+				font-size:1.8rem;
+				line-height:2.4rem;
 				text-align:justify;
 				padding: 1rem 0;
 				em {
@@ -173,16 +183,20 @@ body {
 		}
 
 		div#footer {
-			.column(12);
+			.glcolumn(12);
 			background-image: url('../resources/backgrounds/blackTexture.png');
 			background-repeat: repeat;
-			padding-top:2.4rem;
 			margin-top:2.4rem;
-			padding-bottom:2.4rem;
+			margin-bottom:0;
+			padding:2.4rem 0;
 			border-top:1px solid @textColor1 - #222;
 			text-align:center;
 
 			font-size:1.3rem;
+
+			a#nocturne-link:hover {
+				color: @nocturneGreen;
+			}
 		}
 	}
 }
