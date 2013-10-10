@@ -131,7 +131,7 @@ html {
   font-size: 50%;
 }
 body {
-  background-image: url('../resources/backgrounds/creamTexture2.png');
+  background-image: url('../resources/backgrounds/creamTexture3.png');
   background-repeat: repeat;
   background-color: #e9e7c4;
   margin: 0;
@@ -366,7 +366,7 @@ body div#page div#main-links div.main-link-wrapper {
   margin: 0 1.0416666666666665%;
   padding: 0 4.8rem;
 }
-body div#page div#main-links div.main-link-wrapper h1.main-link-header {
+body div#page div#main-links div.main-link-wrapper h1 {
   font-family: "Droid Serif", sans-serif;
   font-size: 3.2rem;
   font-weight: 800;
@@ -380,7 +380,7 @@ body div#page div#main-links div.main-link-wrapper div.main-link-img-wrapper {
   margin: 1.2rem 0;
   border-bottom: 2px solid #eeaa33;
 }
-body div#page div#main-links div.main-link-wrapper p.main-link-text {
+body div#page div#main-links div.main-link-wrapper p {
   margin: 1.2rem 0;
   font-size: 1.6rem;
   color: #91835a;
