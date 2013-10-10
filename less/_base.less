@@ -106,6 +106,9 @@ body {
 
 		}
 
+// ---------------
+// HOMEPAGE THINGS
+// ---------------
 		.homepage-section {
 			.clearfix;
 			// background-color: fade(#f8f7e8,50%);
@@ -195,7 +198,7 @@ body {
 					font-size:3.2rem;
 					font-weight:800;
 					text-align:center;
-					color:#244718;
+					color:@darkGreen;
 					// color:@linkHover;
 					margin:1.2rem 0;
 				}
@@ -329,3 +332,70 @@ ul.nav-menu li:hover > ul,
 .menu-toggle {
 	display: none;
 }
+
+
+// ---------------
+// PAGE THINGS
+// ---------------
+div.content-area {
+	.column(10);
+	.push(1);
+}
+
+
+// Static pages
+// ------------
+article.page {
+
+	header.entry-header {
+		h1.entry-title {
+			font-family:"Droid Serif", sans-serif;
+			font-size:3.2rem;
+			font-weight:800;
+			color:@darkGreen;
+			// color:@linkHover;
+			margin:1.2rem 0;
+		}
+	}
+
+	div.entry-content {
+		p {
+			color:@textColor3;
+			font-size:1.4rem;
+			line-height:2.4rem;
+			text-align:justify;
+			padding: 1rem 0;
+
+			b {
+				color:lighten(@darkGreen,10%);
+				font-size:1.8rem;
+			}
+		}
+
+		p.strong {
+			
+		}
+
+		ul,ol {
+			color:@textColor3;
+			font-size:1.3rem;
+			line-height:2.4rem;
+			text-align:justify;
+			padding: 0.5rem 0;
+			padding-left:2rem;
+
+			li {
+				color:inherit;
+				font-size:inherit;
+				line-height:inherit;
+				text-align:inherit;
+				padding:inherit;
+			}
+		}
+	}
+
+	div.entry-meta {
+		display:none;
+	}
+}
+	

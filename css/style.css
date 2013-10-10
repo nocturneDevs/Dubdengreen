@@ -462,6 +462,51 @@ ul.nav-menu li:hover > ul,
 .menu-toggle {
   display: none;
 }
+div.content-area {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 9.374999999999998%;
+}
+article.page header.entry-header h1.entry-title {
+  font-family: "Droid Serif", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #244718;
+  margin: 1.2rem 0;
+}
+article.page div.entry-content p {
+  color: #91835a;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: justify;
+  padding: 1rem 0;
+}
+article.page div.entry-content p b {
+  color: #376d25;
+  font-size: 1.8rem;
+}
+article.page div.entry-content ul,
+article.page div.entry-content ol {
+  color: #91835a;
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  text-align: justify;
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+}
+article.page div.entry-content ul li,
+article.page div.entry-content ol li {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  padding: inherit;
+}
+article.page div.entry-meta {
+  display: none;
+}
 @media screen and (min-width: 600px) {
   html {
     font-size: 62.5%;
