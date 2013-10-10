@@ -25,7 +25,9 @@
 					the_title();
 				echo '</h1>';
 
-				echo '<div class="main-link-img-wrapper"></div>';
+				echo '<div class="main-link-img-wrapper">';
+					echo '<img src="' . get_template_directory_uri() . '/resources/images/basketmod.png">';
+				echo '</div>';
 
 				the_content();
 			}
